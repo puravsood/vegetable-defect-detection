@@ -18,8 +18,8 @@ A lightweight deep learning system for **real-time classification of fresh vs. s
 
 ## 📽️ Demo
 
-![demo\_screenshot](assets/demo_screenshot.png)
-![sample\_results](assets/sample_results.gif)
+![demo\_screenshot](assets/result_rotten_banana.png)
+![sample\_results](assets/finetuned_model_demo.mp4)
 
 ---
 
