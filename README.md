@@ -25,7 +25,7 @@ A lightweight deep learning system for **real-time classification of fresh vs. s
 
 ## 🛠️ Architecture
 
-![architecture\_diagram](assets/architecture_diagram.png)
+![architecture\_diagram](assets/architecture_diagram.jpeg)
 
 ---
 
