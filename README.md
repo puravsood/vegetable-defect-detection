@@ -2,7 +2,7 @@
 
 A lightweight deep learning system for **real-time classification of fresh vs. stale vegetables** using MobileNetV2, deployed on NVIDIA Jetson Nano. This edge-AI solution enables offline, low-latency inference for smart agriculture and automated food quality control.
 
-> ⚠️ **Note:** This project is still in progress and the model is not fully optimized. Current inference speed and robustness are sufficient for demonstrations but **may not be production-ready**. Optimization steps like TensorRT conversion, pruning, quantization, and better dataset augmentation are recommended before deployment. 
+> ⚠️ **Note:** This project is still in progress and the model is not fully optimized. Current inference speed and robustness are sufficient for demonstrations but **may not be production-ready**. Optimization steps like TensorRT conversion, pruning, quantization, and better dataset augmentation are recommended before deployment. Also note that if the model lags or causes fps drops, you can remove the finetuning and train it normally for a higher number of epochs
 
 ---
 
@@ -11,7 +11,7 @@ A lightweight deep learning system for **real-time classification of fresh vs. s
 * 🧠 MobileNetV2 pre-trained and fine-tuned on custom dataset
 * 🎥 Live classification via USB camera and OpenCV overlay
 * 💡 Handles lighting variations, occlusions, and camera angle changes
-* ⚡ Real-time inference on Jetson Nano (<2s latency per frame)
+* ⚡ Real-time inference on Jetson Nano
 * 📦 TensorFlow 2.5 and Python 3.6 optimized for edge deployment
 
 ---
@@ -31,31 +31,13 @@ A lightweight deep learning system for **real-time classification of fresh vs. s
 
 ## 🚀 Installation
 
-```bash
-git clone https://github.com/yourusername/vegetable-defect-detection.git
-cd vegetable-defect-detection
-pip install -r requirements.txt
-```
-
-### Jetson Nano Setup (Optional)
-
-Refer to [jetson\_setup.md](jetson_setup.md) for setting up Python 3.6 + TensorFlow 2.5 on Jetson Nano.
+Installation instructions have been intentionally removed as this project is still under development. If you wish to run the code, please review the source files and manually set up the environment accordingly.
 
 ---
 
 ## 🧪 Usage
 
-### Model Training
-
-```bash
-python src/model_training.py
-```
-
-### Real-Time Inference on Jetson
-
-```bash
-python src/inference_jetson.py
-```
+Usage instructions have been omitted since the system is not finalized. For experimental or educational use, please inspect the codebase in the `src/` directory.
 
 ---
 
@@ -64,10 +46,8 @@ python src/inference_jetson.py
 ```
 vegetable-defect-detection/
 ├── src/                  # Python source files
-├── data/                 # Training and test images
 ├── saved_model/          # Exported model
 ├── assets/               # Diagrams, GIFs, screenshots
-├── notebooks/            # Jupyter notebooks (optional)
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
@@ -89,7 +69,7 @@ This project uses a dataset sourced from [Kaggle](https://www.kaggle.com/dataset
 
 ## 📈 Results
 
-* ✅ Accuracy: **>85%** on test set
+* ✅ Accuracy: **>90%** on test set
 * ⚡ Inference time: \~1–2 seconds per frame
 * 🧪 Tested under variable lighting and occlusion conditions
 
@@ -99,6 +79,7 @@ This project uses a dataset sourced from [Kaggle](https://www.kaggle.com/dataset
 
 * 📷 Sensitive to extreme lighting or unfamiliar fruit types
 * 🔄 No on-device learning (training is offline)
+* 🍎 Not trained on all fruit and vegetable types — currently supports only apples and bananas
 * ⏱️ Model is not yet optimized for deployment; potential improvements:
 
   * Convert to TensorRT or TensorFlow Lite for faster inference
@@ -107,6 +88,7 @@ This project uses a dataset sourced from [Kaggle](https://www.kaggle.com/dataset
   * Explore batch inference and camera input filtering for stability
 
 ---
+
 
 ## 📄 License
 
