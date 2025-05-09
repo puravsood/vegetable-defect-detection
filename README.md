@@ -18,8 +18,8 @@ A lightweight deep learning system for **real-time classification of fresh vs. s
 
 ## 📽️ Demo
 
-![demo\_screenshot](assets/result_rotten_banana.png)
-![sample\_results](assets/finetuned_model_demo.mp4)
+![demo\_screenshot](assets/result_fresh_apple.png)
+![sample\_results](assets/result_rotten_banana.png)
 
 ---
 
@@ -46,8 +46,9 @@ Usage instructions have been omitted since the system is not finalized. For expe
 ```
 vegetable-defect-detection/
 ├── src/                  # Python source files
-├── saved_model/          # Exported model
+├── saved_models/         # Exported model
 ├── assets/               # Diagrams, GIFs, screenshots
+├── jetson_setup.md       # Setup instructions for Jetson Nano
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
