@@ -29,7 +29,7 @@ In case that does not work and you have similar specs as mine or go through simi
 
 ## 🧰 Step 1: Flash JetPack OS
 
-1. Download the [JetPack SDK](https://developer.nvidia.com/embedded/jetpack) and flash it to the SD card using [Balena Etcher](https://www.balena.io/etcher/).
+1. Download the [JetPack SDK](https://developer.nvidia.com/embedded/jetpack-sdk-46) and flash it to the SD card using [Balena Etcher](https://www.balena.io/etcher/).
 2. Insert the SD card into the Jetson Nano and boot it up.
 
 ---
