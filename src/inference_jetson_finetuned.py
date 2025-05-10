@@ -1,3 +1,4 @@
+# This code corresponds to the finetuned_model in saved_models. It needs lots of optimizations and is currently under development. Feel free to optimize and experiment on your own.
 import cv2
 import tensorflow as tf
 import numpy as np
