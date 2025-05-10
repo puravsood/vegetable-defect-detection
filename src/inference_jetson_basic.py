@@ -1,4 +1,7 @@
-# This code corresponds to the mobilenetv2_basic model in saved_models. It classified in real time(no lags) however it was not very accurate in its classification which is why the model was then finetuned. The training file for this corresponding model is not available unfortunately. If you wish to train it again you can remove the finetuning from finetuned_model_training.py in src and run the code. 
+""" This code corresponds to the mobilenetv2_basic model in saved_models.
+It classified in real time(no lags) however it was not very accurate in its classification which is why the model was then finetuned.
+The training file for this corresponding model is not available unfortunately.
+If you wish to train it again you can remove the finetuning from finetuned_model_training.py in src and run the code. """
 import cv2
 import tensorflow as tf
 import numpy as np
