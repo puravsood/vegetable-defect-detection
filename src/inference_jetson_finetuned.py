@@ -1,4 +1,7 @@
-# This code corresponds to the finetuned_model in saved_models. It needs lots of optimizations and is currently under development. Feel free to optimize and experiment on your own.
+"""This code corresponds to the finetuned_model in saved_models.
+It needs lots of optimizations and is currently under development.
+Feel free to optimize and experiment on your own."""
+
 import cv2
 import tensorflow as tf
 import numpy as np
@@ -20,10 +23,10 @@ class_names = [
 # Open USB camera
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
-    print("❌ Error: Could not open camera.")
+    print("Error: Could not open camera.")
     exit()
 
-print("✅ Camera started. Press 'q' to quit.")
+print("Camera started. Press 'q' to quit.")
 
 while True:
     ret, frame = cap.read()
@@ -43,7 +46,7 @@ while True:
 
     # Check for rotten detection
     if 'rotten' in label:
-        print(f"⚠️ Rotten fruit detected: {label} (Confidence: {confidence:.2f})")
+        print(f"Rotten fruit detected: {label} (Confidence: {confidence:.2f})")
 
     # Display label on camera window
     cv2.putText(frame, f"{label} ({confidence:.2f})", (10, 30),
