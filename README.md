@@ -31,7 +31,7 @@ A lightweight deep learning system for **real-time classification of fresh vs. s
 
 ## 🚀 Installation
 
-Installation instructions have been intentionally removed as this project is still under development. If you wish to run the code, please review the source files and manually set up the environment accordingly.
+Installation instructions have been intentionally removed as this project is still under development. If you wish to run the code and experiment on your own, please review the source files and manually set up the environment accordingly. The setup instructions for the Jetson Nano are provided in the [Jetson Setup Guide](https://github.com/puravsood/vegetable-defect-detection/blob/main/jetson_setup.md).
 
 ---
 
@@ -46,11 +46,10 @@ Usage instructions have been omitted since the system is not finalized. For expe
 ```
 vegetable-defect-detection/
 ├── src/                  # Python source files
-├── saved_models/         # Exported model
-├── assets/               # Diagrams, GIFs, screenshots
+├── saved_models/         # Exported models(Basic and Fine tuned)
+├── assets/               # Diagrams, videos, screenshots
 ├── jetson_setup.md       # Setup instructions for Jetson Nano
 ├── README.md
-├── requirements.txt
 ├── LICENSE
 ├── .gitignore
 ```
