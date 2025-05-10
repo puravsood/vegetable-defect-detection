@@ -1,0 +1,3 @@
+saved_model/* linguist-vendored
+assets/* linguist-vendored
+*.pb linguist-vendored
