@@ -99,5 +99,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🔖 Tags
 
-`#JetsonNano` `#EdgeAI` `#ComputerVision` `#TensorFlow` `#MobileNetV2` `#Python` `#AgriTech` `#OpenCV`
+`#JetsonNano` `#EdgeAI` `#ComputerVision` `#TensorFlow` `#MobileNetV2` `#Python` `#AgriTech` `#OpenCV` `#TensorFLow 2.5` `#whl file` `#aarch64`
 
