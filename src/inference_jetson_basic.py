@@ -1,10 +1,10 @@
-# This code corresponds to the mobilenetv2_basic model in saved_models. It classified in real time(no lags) however it was not very accurate in its classification which is why the model was then finetuned.
+# This code corresponds to the mobilenetv2_basic model in saved_models. It classified in real time(no lags) however it was not very accurate in its classification which is why the model was then finetuned. The training file for this corresponding model is not available unfortunately. If you wish to train it again you can remove the finetuning from finetuned_model_training.py in src and run the code. 
 import cv2
 import tensorflow as tf
 import numpy as np
 
 # Load the full TF model (SavedModel format)
-model_path = "/media/nano/sdcard/venv/mobilenet_fresh_stale_tf25"
+model_path = "/path/to/your/model/here"
 model = tf.keras.models.load_model(model_path)
 
 # Get input shape from the model
@@ -20,7 +20,7 @@ class_names = [
 # Open the camera
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
-    print("❌ Error: Could not open camera.")
+    print("Error: Could not open camera.")
     exit()
 
 print("Camera started. Press 'q' to quit.")
