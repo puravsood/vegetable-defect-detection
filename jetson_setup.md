@@ -46,11 +46,18 @@ Installing TensorFlow 2.5 on Jetson Nano involved **significant troubleshooting*
 
 > ⚠️ Do not use "pip install tensorflow" directly on Jetson Nano — it requires a special optimized build to leverage hardware acceleration efficiently. Use the recommended .whl file instead.
 
-You can download the exact `.whl` file used (hosted in the GitHub repo):
+You can download the exact `.whl` file used (hosted in the GitHub release):
 
 ```bash
-pip install tensorflow-2.5.0-cp36-cp36m-linux_aarch64.whl
+wget https://github.com/puravsood/vegetable-defect-detection/releases/download/v1.0/tensorflow-2.5.0+nv21.8-cp36-cp36m-linux_aarch64.whl
+pip install tensorflow-2.5.0+nv21.8-cp36-cp36m-linux_aarch64.whl
 ```
+
+📦 Additional .whl Files
+
+Other required .whl files are also included in the same release. Install them as needed. The release also contains two other versions of TensorFlow supported by the Jetson Nano, however the dependencies are for TensorFlow 2.5.0 only.
+
+💡 You may also need .whl files to install TensorFlow 2.5 on your Windows or macOS laptop, since it's an older version and may not install directly via pip. These files are widely available for Windows, so I haven’t included them here — but macOS users may need to search for a compatible build or consider using a Linux-based virtual environment.
 
 > ⚠️ Dependencies were often installed outside the virtual environment — make sure they are installed into the venv directory as well.
 
