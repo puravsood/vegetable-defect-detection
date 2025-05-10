@@ -1,4 +1,8 @@
-# This Fine tuned model is trained only on Apples and Bananas from the linked dataset. The images in the dataset are not very ideal for this project. If you wish to experiment you can create a dataset of your own. However if you use the linked dataset from the Readme, I would suggest you place the fruits in a white background while testing, or optimize the model on your own for it to perform better.
+""" This Fine tuned model is trained only on Apples and Bananas from the linked dataset.
+The images in the dataset are not very ideal for this project.
+If you wish to experiment you can create a dataset of your own.
+However if you use the linked dataset from the Readme, I would suggest you place the fruits in a white background while testing, or optimize the model on your own for it to perform better. """
+
 import os
 import numpy as np
 import tensorflow as tf
